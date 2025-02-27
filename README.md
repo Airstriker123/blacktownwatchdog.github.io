@@ -1,3 +1,5 @@
 # Blacktown-Watchdog---ec
 # website src 
-# (smshs)
+# school: SMSHS
+# by: Amit Singh
+
