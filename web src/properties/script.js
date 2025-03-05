@@ -1,3 +1,7 @@
+// IGNORE THIS 
+// NOT USED 
+
+
 const cards = document.querySelectorAll('.mouse-cursor-gradient-tracking');
 const body = document.querySelectorAll('.body');
 
