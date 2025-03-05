@@ -1,0 +1,872 @@
+/* imports for styling for css fonts and animations */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-closed {
+  display: none;
+}
+
+.navbar-option:hover {
+  text-shadow: 10px 5px 20px (0, 135, 255, 0.5);
+  transition: 0.3s ease-in-out;
+  transform: scale(1.01);
+  color: #aaaaaa;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 300px;
+  background: linear-gradient(135deg, rgba(0, 217, 255, 0.8), rgba(21, 0, 255, 0.3));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease-in-out;
+  border-radius: 10px;
+  transform: translateX(-7px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  backdrop-filter: blur(7px);
+  animation: function 1s ease-out, fadeIn 0.25s ease-in-out;
+}
+
+.navbar-title {
+  margin: 0;
+  padding: 16px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.navbar-title img {
+  width: 80px;
+  height: 75px;
+  margin-right: 10px;
+}
+
+.navbar-title img:hover {
+  transition: all ease 0.5s;
+  transform: scale(1.1);
+  animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.navbar-option {
+  padding: 16px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.navbar-minimize {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #999;
+  cursor: pointer;
+  transform: translateY(-10px), translateX(10px);
+  transition: all 0.3s ease-in-out;
+}
+.navbar-minimize:hover {
+  color: #fff;
+}
+
+
+.screen {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  right: 0;
+  bottom: 15%;
+  background: linear-gradient(135deg, rgba(8, 43, 78, .9), rgba(8, 43, 78, .3));
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  animation: fadeIn 0.25s ease-in-out;
+  backdrop-filter: blur(7px);
+
+}
+
+.screen.active {
+  display: block;
+}
+
+.screen .title-text {
+  margin: 0;
+  padding: 16px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes pulse {
+  0% {
+      text-shadow: 0 2px 20px rgb(202, 172, 0);
+  }
+  50% {
+      text-shadow: 0 2px 30px rgb(202, 172, 0);
+  }
+  100% {
+      text-shadow: 0 2px 20px rgb(202, 172, 0);
+  }
+}
+
+#list {
+  overflow-y: auto;
+  height: 88%;
+  scroll-snap-type: y mandatory;
+}
+
+#list > div {
+  height: auto;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+/* act code */
+.btn {
+  /*this code is how the button will look like */
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden; 
+}
+
+.btn:before {
+  /* this code is for when hovering over the button how it will look */
+  content: "";
+  position: absolute;
+  color: rgb(178, 101, 0);
+  bottom: 0;
+  left: -100%; 
+  width: 100%;
+  height: 2px;
+  background-color: rgb(178, 101, 0);
+  transition: left 0.321s ease-out; 
+  z-index: 1;
+}
+
+.btn:hover:before {
+  left: 0;
+  color: rgb(178, 101, 0);
+}
+
+.btn2 {
+  /*this code is how the button will look like pressed */
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #00ff3c;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden; 
+}
+
+.btn2:before {
+  /* this code is for when hovering over the button how it will look */
+  content: "";
+  position: absolute;
+  color: rgb(178, 101, 0);
+  bottom: 0;
+  left: -100%; 
+  width: 100%;
+  height: 2px;
+  background-color: rgb(178, 101, 0);
+  transition: left 0.321s ease-out; 
+  z-index: 1;
+}
+
+.btn2:hover:before {
+  left: 0;
+  color: rgb(178, 101, 0);
+}
+
+body {  
+/* this is the page setup of all the pages like how the background will look and the animation */
+animation: fadeInScale 1s ease-in-out;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: relative;
+background-color: #000000;
+margin: 0;
+padding: 0;
+}
+
+
+/* Glow element settings */
+#glow {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(0, 255, 0, 0.7); /* Green glow */
+  pointer-events: none; /* Ensure it doesn't interfere with clicking */
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+
+
+/* Keyframes to make the glow follow the cursor */
+@keyframes moveGlow {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5); /* Optional: scale effect */
+  }
+}
+ 
+
+header {
+  /* this is the code for the header/banner it has the background image which is the banner image and it tells how the header/banner will be displayed */
+  background-image: url("-_-");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000000;
+  box-shadow: 0 0 10px #00e5ff, 0 0 20px #00f7ff, 0 0 30px #00ddff, 0 0 40px #0400ff, 0 0 70px #0400ff, 0 0 80px #0d00ff, 0 0 100px #0099ff;
+  position: relative;
+  z-index: 1;
+}
+
+      
+      .header {
+        display: flex;
+        align-items: center;
+      }
+    /* this is a animation that changes the opacity */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      /* this is another animation that makes a cool transition when loading a webpage */
+      @keyframes slideIn {
+        from {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      
+      .banner-text {
+        /* this is the color of the banner text */
+        animation: slideIn 1s forwards;
+        color:rgb(255, 255, 255);
+      }
+      
+      .banner-logo {
+       /* this is a element for the logo class that plays the fadeIn animation that lasts for 1 second */
+        animation: fadeIn 1s 1s forwards;
+      }
+      
+      
+  
+  .logo {
+    /* this element makes tells how the logo will be displayed and plays the function animation */
+    animation: function 1s ease-out;
+    width: 70px;
+    height: 65px;
+    margin-right: 10px; 
+  }
+
+  nav {
+    /* this is how the navigation buttons will be displayed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav a {
+    /* this is also how it will be displayed playing a transition */
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    /* this element is for what happens when you hover over the button it will convert to 1.2 times it size and the color */
+    color: rgb(255, 98, 0);
+    transform: scale(1.2);
+  }
+  
+  section {
+    /* this is how the section tag in the html pages will display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+
+
+  .card {
+    /* this is how the card class will display and how it will look like */
+    position: relative;
+    color: #ffffff;
+    opacity: 0.8;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    animation: function 1s ease-out, rotate-gradient-angle 2s ease-in-out;
+    background: linear-gradient(235deg, cyan 0%, blue 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00e5ff, 0 0 20px #00f7ff, 0 0 30px #00ddff, 0 0 40px #0400ff, 0 0 70px #0400ff, 0 0 80px #0d00ff, 0 0 100px #0099ff;
+    transition: all 0.2s ease-in-out;
+    flex-basis: 300px;
+    text-align: center;
+
+  }
+  
+  section {
+    /* this is how the section tag in the html pages will display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+
+  .card-link {
+    text-decoration: none; /* Remove underline */
+    display: block; /* Makes the whole area clickable */
+  }
+  
+  .card:hover {
+    /* this is how the card class will display when you hover over it transforms slighty up and changes the box shadow and filter brightness which shows its brightness */
+    transform: translateY(-5px);
+    opacity: 80%;
+    filter: brightness(100%);
+    color: #1500ff;
+    box-shadow: 0 0 10px #00e5ff, 0 0 20px #00f7ff, 0 0 30px #00ddff, 0 0 40px #0400ff, 0 0 70px #0400ff, 0 0 80px #0d00ff, 0 0 100px #0099ff;
+  }
+  
+  .card h2 {
+    /* this is how the h2 in the card will display */
+    color: white;
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  .card p {
+   /* this is how the p in the class will display */
+    margin-bottom: 0;
+    color: white;
+  }
+  
+  .card:hover h2 {
+    /* this is how the h2 in the card will display */
+    color: rgb(0, 0, 0);
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  .card:hover li {
+    /* this is how the h2 in the card will display */
+    color: rgb(0, 0, 0);
+  }
+  .card:hover p {
+   /* this is how the p in the class will display */
+    margin-bottom: 0;
+    color: rgb(0, 0, 0);
+  }
+  .card ul {
+    /* this is the uI of the card */
+    color: white;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .card img {
+   /* this is how the img of the card will display */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+    
+    footer {
+      /* this is the footer and how it will display */
+      opacity: 85%;
+      background-color: rgb(46, 46, 46);
+      background-size: contain;
+      color:rgb(255, 132, 0);
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    
+    footer div {
+     /* this is the div in the footer */
+      justify-content: center;
+      align-items: center;
+    }
+    
+    footer img {
+      /* how the img will display in the footer */
+      margin: 0 10px;
+    }
+    
+     footer p {
+      /* how the p will display in the footer */
+      margin: 0;
+    }
+    
+h1 {
+  /* how h1 will display */
+  margin-right: 10px;
+}
+a {
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
+.banner-text {
+   /* animation for the banner text */
+  animation: slideIn 1s forwards;
+
+}
+
+.banner-logo {
+  /* animation for banner logo */
+  animation: fadeIn 1s 1s forwards;
+
+}
+/* a animation that moves a element class when loading the page*/
+@keyframes function {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* a animation that shows the colors cyan and blue and they show as the backgroun color for the card and move around */
+@keyframes rotate-gradient-angle {
+  0% {
+    background: linear-gradient(135deg, cyan 0%, blue 100%);
+  }
+  1% {
+    background: linear-gradient(136deg, cyan 0%, blue 100%);
+  }
+  2% {
+    background: linear-gradient(137deg, cyan 0%, blue 100%);
+  }
+  3% {
+    background: linear-gradient(138deg, cyan 0%, blue 100%);
+  }
+  4% {
+    background: linear-gradient(139deg, cyan 0%, blue 100%);
+  }
+  5% {
+    background: linear-gradient(140deg, cyan 0%, blue 100%);
+  }
+  6% {
+    background: linear-gradient(141deg, cyan 0%, blue 100%);
+  }
+  7% {
+    background: linear-gradient(142deg, cyan 0%, blue 100%);
+  }
+  8% {
+    background: linear-gradient(143deg, cyan 0%, blue 100%);
+  }
+  9% {
+    background: linear-gradient(144deg, cyan 0%, blue 100%);
+  }
+  10% {
+    background: linear-gradient(145deg, cyan 0%, blue 100%);
+  }
+  11% {
+    background: linear-gradient(146deg, cyan 0%, blue 100%);
+  }
+  12% {
+    background: linear-gradient(147deg, cyan 0%, blue 100%);
+  }
+  13% {
+    background: linear-gradient(148deg, cyan 0%, blue 100%);
+  }
+  14% {
+    background: linear-gradient(149deg, cyan 0%, blue 100%);
+  }
+  15% {
+    background: linear-gradient(150deg, cyan 0%, blue 100%);
+  }
+  16% {
+    background: linear-gradient(151deg, cyan 0%, blue 100%);
+  }
+  17% {
+    background: linear-gradient(152deg, cyan 0%, blue 100%);
+  }
+  18% {
+    background: linear-gradient(153deg, cyan 0%, blue 100%);
+  }
+  19% {
+    background: linear-gradient(154deg, cyan 0%, blue 100%);
+  }
+  20% {
+    background: linear-gradient(155deg, cyan 0%, blue 100%);
+  }
+  21% {
+    background: linear-gradient(156deg, cyan 0%, blue 100%);
+  }
+  22% {
+    background: linear-gradient(157deg, cyan 0%, blue 100%);
+  }
+  23% {
+    background: linear-gradient(158deg, cyan 0%, blue 100%);
+  }
+  24% {
+    background: linear-gradient(159deg, cyan 0%, blue 100%);
+  }
+  25% {
+    background: linear-gradient(160deg, cyan 0%, blue 100%);
+  }
+  26% {
+    background: linear-gradient(161deg, cyan 0%, blue 100%);
+  }
+  27% {
+    background: linear-gradient(162deg, cyan 0%, blue 100%);
+  }
+  28% {
+    background: linear-gradient(163deg, cyan 0%, blue 100%);
+  }
+  29% {
+    background: linear-gradient(164deg, cyan 0%, blue 100%);
+  }
+  30% {
+    background: linear-gradient(165deg, cyan 0%, blue 100%);
+  }
+    31% {
+    background: linear-gradient(166deg, cyan 0%, blue 100%);
+  }
+  32% {
+    background: linear-gradient(167deg, cyan 0%, blue 100%);
+  }
+  33% {
+    background: linear-gradient(168deg, cyan 0%, blue 100%);
+  }
+  34% {
+    background: linear-gradient(169deg, cyan 0%, blue 100%);
+  }
+  35% {
+    background: linear-gradient(170deg, cyan 0%, blue 100%);
+  }
+  36% {
+    background: linear-gradient(171deg, cyan 0%, blue 100%);
+  }
+  37% {
+    background: linear-gradient(172deg, cyan 0%, blue 100%);
+  }
+  38% {
+    background: linear-gradient(173deg, cyan 0%, blue 100%);
+  }
+  39% {
+    background: linear-gradient(174deg, cyan 0%, blue 100%);
+  }
+  40% {
+    background: linear-gradient(175deg, cyan 0%, blue 100%);
+  }
+  41% {
+    background: linear-gradient(176deg, cyan 0%, blue 100%);
+  }
+  42% {
+    background: linear-gradient(177deg, cyan 0%, blue 100%);
+  }
+  43% {
+    background: linear-gradient(178deg, cyan 0%, blue 100%);
+  }
+  44% {
+    background: linear-gradient(179deg, cyan 0%, blue 100%);
+  }
+  45% {
+    background: linear-gradient(180deg, cyan 0%, blue 100%);
+  }
+  46% {
+    background: linear-gradient(181deg, cyan 0%, blue 100%);
+  }
+  47% {
+    background: linear-gradient(182deg, cyan 0%, blue 100%);
+  }
+  48% {
+    background: linear-gradient(183deg, cyan 0%, blue 100%);
+  }
+  49% {
+    background: linear-gradient(184deg, cyan 0%, blue 100%);
+  }
+  50% {
+    background: linear-gradient(185deg, cyan 0%, blue 100%);
+  }
+  51% {
+    background: linear-gradient(186deg, cyan 0%, blue 100%);
+  }
+  52% {
+    background: linear-gradient(187deg, cyan 0%, blue 100%);
+  }
+  53% {
+    background: linear-gradient(188deg, cyan 0%, blue 100%);
+  }
+  54% {
+    background: linear-gradient(189deg, cyan 0%, blue 100%);
+  }
+  55% {
+    background: linear-gradient(190deg, cyan 0%, blue 100%);
+  }
+  56% {
+    background: linear-gradient(191deg, cyan 0%, blue 100%);
+  }
+  57% {
+    background: linear-gradient(192deg, cyan 0%, blue 100%);
+  }
+  58% {
+    background: linear-gradient(193deg, cyan 0%, blue 100%);
+  }
+  59% {
+    background: linear-gradient(194deg, cyan 0%, blue 100%);
+  }
+  60% {
+    background: linear-gradient(195deg, cyan 0%, blue 100%);
+  }
+  61% {
+    background: linear-gradient(196deg, cyan 0%, blue 100%);
+  }
+  62% {
+    background: linear-gradient(197deg, cyan 0%, blue 100%);
+  }
+  63% {
+    background: linear-gradient(198deg, cyan 0%, blue 100%);
+  }
+  64% {
+    background: linear-gradient(199deg, cyan 0%, blue 100%);
+  }
+  65% {
+    background: linear-gradient(200deg, cyan 0%, blue 100%);
+  }
+  66% {
+    background: linear-gradient(201deg, cyan 0%, blue 100%);
+  }
+  67% {
+    background: linear-gradient(202deg, cyan 0%, blue 100%);
+  }
+  68% {
+    background: linear-gradient(203deg, cyan 0%, blue 100%);
+  }
+  69% {
+    background: linear-gradient(204deg, cyan 0%, blue 100%);
+  }
+  70% {
+    background: linear-gradient(205deg, cyan 0%, blue 100%);
+  }
+  71% {
+    background: linear-gradient(206deg, cyan 0%, blue 100%);
+  }
+  72% {
+    background: linear-gradient(207deg, cyan 0%, blue 100%);
+  }
+  73% {
+    background: linear-gradient(208deg, cyan 0%, blue 100%);
+  }
+  74% {
+    background: linear-gradient(209deg, cyan 0%, blue 100%);
+  }
+  75% {
+    background: linear-gradient(210deg, cyan 0%, blue 100%);
+  }
+  76% {
+    background: linear-gradient(211deg, cyan 0%, blue 100%);
+  }
+  77% {
+    background: linear-gradient(212deg, cyan 0%, blue 100%);
+  }
+  78% {
+    background: linear-gradient(213deg, cyan 0%, blue 100%);
+  }
+  79% {
+    background: linear-gradient(214deg, cyan 0%, blue 100%);
+  }
+  80% {
+    background: linear-gradient(215deg, cyan 0%, blue 100%);
+  }
+  81% {
+    background: linear-gradient(216deg, cyan 0%, blue 100%);
+  }
+  82% {
+    background: linear-gradient(217deg, cyan 0%, blue 100%);
+  }
+  83% {
+    background: linear-gradient(218deg, cyan 0%, blue 100%);
+  }
+  84% {
+    background: linear-gradient(219deg, cyan 0%, blue 100%);
+  }
+  85% {
+    background: linear-gradient(220deg, cyan 0%, blue 100%);
+  }
+  86% {
+    background: linear-gradient(221deg, cyan 0%, blue 100%);
+  }
+  87% {
+    background: linear-gradient(222deg, cyan 0%, blue 100%);
+  }
+  88% {
+    background: linear-gradient(223deg, cyan 0%, blue 100%);
+  }
+  89% {
+    background: linear-gradient(224deg, cyan 0%, blue 100%);
+  }
+  90% {
+    background: linear-gradient(225deg, cyan 0%, blue 100%);
+  }
+  91% {
+    background: linear-gradient(226deg, cyan 0%, blue 100%);
+  }
+  92% {
+    background: linear-gradient(227deg, cyan 0%, blue 100%);
+  }
+  93% {
+    background: linear-gradient(228deg, cyan 0%, blue 100%);
+  }
+  94% {
+    background: linear-gradient(229deg, cyan 0%, blue 100%);
+  }
+  95% {
+    background: linear-gradient(230deg, cyan 0%, blue 100%);
+  }
+  96% {
+    background: linear-gradient(231deg, cyan 0%, blue 100%);
+  }
+  97% {
+    background: linear-gradient(232deg, cyan 0%, blue 100%);
+  }
+  98% {
+    background: linear-gradient(233deg, cyan 0%, blue 100%);
+  }
+  99% {
+    background: linear-gradient(234deg, cyan 0%, blue 100%);
+  }
+  100% {
+    background: linear-gradient(235deg, cyan 0%, blue 100%);
+  }
+}
+
+.mouse-cursor-gradient-tracking {
+  position: relative;
+  animation: rotate-gradient-angle 2s ease-in-out infinite;
+  overflow: hidden;
+}
+
+.mouse-cursor-gradient-tracking span {
+  position: relative;
+  pointer-events: none; /* Prevents the span from interfering with mouse events */
+}
+
+.mouse-cursor-gradient-tracking::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, rgb(17, 255, 0), transparent);
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+.mouse-cursor-gradient-tracking:hover::before {
+  --size: 10px; /* Size of the gradient on hover */
+}
+
+.card ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 20px;
+}
