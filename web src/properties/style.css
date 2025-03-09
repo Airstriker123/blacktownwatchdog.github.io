@@ -390,7 +390,7 @@ header {
     padding: 20px;
     position: relative;
     animation: function 1s ease-out, rotate-gradient-angle 2s ease-in-out;
-    background: linear-gradient(235deg, cyan 0%, blue 100%);
+    background: linear-gradient(235deg, rgb(157, 157, 157) 0%, blue 100%);
     border-radius: 10px;
     box-shadow: 0 0 10px #00e5ff, 0 0 20px #00f7ff, 0 0 30px #00ddff, 0 0 40px #0400ff, 0 0 70px #0400ff, 0 0 80px #0d00ff, 0 0 100px #0099ff;
     transition: all 0.2s ease-in-out;
@@ -530,310 +530,310 @@ a:hover {
     transform: translateY(0);
   }
 }
-/* a animation that shows the colors cyan and blue and they show as the backgroun color for the card and move around */
+/* a animation that shows the colors white and blue and they show as the backgroun color for the card and move around */
 @keyframes rotate-gradient-angle {
   0% {
-    background: linear-gradient(135deg, cyan 0%, blue 100%);
+    background: linear-gradient(135deg, white 0%, blue 100%);
   }
   1% {
-    background: linear-gradient(136deg, cyan 0%, blue 100%);
+    background: linear-gradient(136deg, white 0%, blue 100%);
   }
   2% {
-    background: linear-gradient(137deg, cyan 0%, blue 100%);
+    background: linear-gradient(137deg, white 0%, blue 100%);
   }
   3% {
-    background: linear-gradient(138deg, cyan 0%, blue 100%);
+    background: linear-gradient(138deg, white 0%, blue 100%);
   }
   4% {
-    background: linear-gradient(139deg, cyan 0%, blue 100%);
+    background: linear-gradient(139deg, white 0%, blue 100%);
   }
   5% {
-    background: linear-gradient(140deg, cyan 0%, blue 100%);
+    background: linear-gradient(140deg, white 0%, blue 100%);
   }
   6% {
-    background: linear-gradient(141deg, cyan 0%, blue 100%);
+    background: linear-gradient(141deg, white 0%, blue 100%);
   }
   7% {
-    background: linear-gradient(142deg, cyan 0%, blue 100%);
+    background: linear-gradient(142deg, white 0%, blue 100%);
   }
   8% {
-    background: linear-gradient(143deg, cyan 0%, blue 100%);
+    background: linear-gradient(143deg, white 0%, blue 100%);
   }
   9% {
-    background: linear-gradient(144deg, cyan 0%, blue 100%);
+    background: linear-gradient(144deg, white 0%, blue 100%);
   }
   10% {
-    background: linear-gradient(145deg, cyan 0%, blue 100%);
+    background: linear-gradient(145deg, white 0%, blue 100%);
   }
   11% {
-    background: linear-gradient(146deg, cyan 0%, blue 100%);
+    background: linear-gradient(146deg, white 0%, blue 100%);
   }
   12% {
-    background: linear-gradient(147deg, cyan 0%, blue 100%);
+    background: linear-gradient(147deg, white 0%, blue 100%);
   }
   13% {
-    background: linear-gradient(148deg, cyan 0%, blue 100%);
+    background: linear-gradient(148deg, white 0%, blue 100%);
   }
   14% {
-    background: linear-gradient(149deg, cyan 0%, blue 100%);
+    background: linear-gradient(149deg, white 0%, blue 100%);
   }
   15% {
-    background: linear-gradient(150deg, cyan 0%, blue 100%);
+    background: linear-gradient(150deg, white 0%, blue 100%);
   }
   16% {
-    background: linear-gradient(151deg, cyan 0%, blue 100%);
+    background: linear-gradient(151deg, white 0%, blue 100%);
   }
   17% {
-    background: linear-gradient(152deg, cyan 0%, blue 100%);
+    background: linear-gradient(152deg, white 0%, blue 100%);
   }
   18% {
-    background: linear-gradient(153deg, cyan 0%, blue 100%);
+    background: linear-gradient(153deg, white 0%, blue 100%);
   }
   19% {
-    background: linear-gradient(154deg, cyan 0%, blue 100%);
+    background: linear-gradient(154deg, white 0%, blue 100%);
   }
   20% {
-    background: linear-gradient(155deg, cyan 0%, blue 100%);
+    background: linear-gradient(155deg, white 0%, blue 100%);
   }
   21% {
-    background: linear-gradient(156deg, cyan 0%, blue 100%);
+    background: linear-gradient(156deg, white 0%, blue 100%);
   }
   22% {
-    background: linear-gradient(157deg, cyan 0%, blue 100%);
+    background: linear-gradient(157deg, white 0%, blue 100%);
   }
   23% {
-    background: linear-gradient(158deg, cyan 0%, blue 100%);
+    background: linear-gradient(158deg, white 0%, blue 100%);
   }
   24% {
-    background: linear-gradient(159deg, cyan 0%, blue 100%);
+    background: linear-gradient(159deg, white 0%, blue 100%);
   }
   25% {
-    background: linear-gradient(160deg, cyan 0%, blue 100%);
+    background: linear-gradient(160deg, white 0%, blue 100%);
   }
   26% {
-    background: linear-gradient(161deg, cyan 0%, blue 100%);
+    background: linear-gradient(161deg, white 0%, blue 100%);
   }
   27% {
-    background: linear-gradient(162deg, cyan 0%, blue 100%);
+    background: linear-gradient(162deg, white 0%, blue 100%);
   }
   28% {
-    background: linear-gradient(163deg, cyan 0%, blue 100%);
+    background: linear-gradient(163deg, white 0%, blue 100%);
   }
   29% {
-    background: linear-gradient(164deg, cyan 0%, blue 100%);
+    background: linear-gradient(164deg, white 0%, blue 100%);
   }
   30% {
-    background: linear-gradient(165deg, cyan 0%, blue 100%);
+    background: linear-gradient(165deg, white 0%, blue 100%);
   }
     31% {
-    background: linear-gradient(166deg, cyan 0%, blue 100%);
+    background: linear-gradient(166deg, white 0%, blue 100%);
   }
   32% {
-    background: linear-gradient(167deg, cyan 0%, blue 100%);
+    background: linear-gradient(167deg, white 0%, blue 100%);
   }
   33% {
-    background: linear-gradient(168deg, cyan 0%, blue 100%);
+    background: linear-gradient(168deg, white 0%, blue 100%);
   }
   34% {
-    background: linear-gradient(169deg, cyan 0%, blue 100%);
+    background: linear-gradient(169deg, white 0%, blue 100%);
   }
   35% {
-    background: linear-gradient(170deg, cyan 0%, blue 100%);
+    background: linear-gradient(170deg, white 0%, blue 100%);
   }
   36% {
-    background: linear-gradient(171deg, cyan 0%, blue 100%);
+    background: linear-gradient(171deg, white 0%, blue 100%);
   }
   37% {
-    background: linear-gradient(172deg, cyan 0%, blue 100%);
+    background: linear-gradient(172deg, white 0%, blue 100%);
   }
   38% {
-    background: linear-gradient(173deg, cyan 0%, blue 100%);
+    background: linear-gradient(173deg, white 0%, blue 100%);
   }
   39% {
-    background: linear-gradient(174deg, cyan 0%, blue 100%);
+    background: linear-gradient(174deg, white 0%, blue 100%);
   }
   40% {
-    background: linear-gradient(175deg, cyan 0%, blue 100%);
+    background: linear-gradient(175deg, white 0%, blue 100%);
   }
   41% {
-    background: linear-gradient(176deg, cyan 0%, blue 100%);
+    background: linear-gradient(176deg, white 0%, blue 100%);
   }
   42% {
-    background: linear-gradient(177deg, cyan 0%, blue 100%);
+    background: linear-gradient(177deg, white 0%, blue 100%);
   }
   43% {
-    background: linear-gradient(178deg, cyan 0%, blue 100%);
+    background: linear-gradient(178deg, white 0%, blue 100%);
   }
   44% {
-    background: linear-gradient(179deg, cyan 0%, blue 100%);
+    background: linear-gradient(179deg, white 0%, blue 100%);
   }
   45% {
-    background: linear-gradient(180deg, cyan 0%, blue 100%);
+    background: linear-gradient(180deg, white 0%, blue 100%);
   }
   46% {
-    background: linear-gradient(181deg, cyan 0%, blue 100%);
+    background: linear-gradient(181deg, white 0%, blue 100%);
   }
   47% {
-    background: linear-gradient(182deg, cyan 0%, blue 100%);
+    background: linear-gradient(182deg, white 0%, blue 100%);
   }
   48% {
-    background: linear-gradient(183deg, cyan 0%, blue 100%);
+    background: linear-gradient(183deg, white 0%, blue 100%);
   }
   49% {
-    background: linear-gradient(184deg, cyan 0%, blue 100%);
+    background: linear-gradient(184deg, white 0%, blue 100%);
   }
   50% {
-    background: linear-gradient(185deg, cyan 0%, blue 100%);
+    background: linear-gradient(185deg, white 0%, blue 100%);
   }
   51% {
-    background: linear-gradient(186deg, cyan 0%, blue 100%);
+    background: linear-gradient(186deg, white 0%, blue 100%);
   }
   52% {
-    background: linear-gradient(187deg, cyan 0%, blue 100%);
+    background: linear-gradient(187deg, white 0%, blue 100%);
   }
   53% {
-    background: linear-gradient(188deg, cyan 0%, blue 100%);
+    background: linear-gradient(188deg, white 0%, blue 100%);
   }
   54% {
-    background: linear-gradient(189deg, cyan 0%, blue 100%);
+    background: linear-gradient(189deg, white 0%, blue 100%);
   }
   55% {
-    background: linear-gradient(190deg, cyan 0%, blue 100%);
+    background: linear-gradient(190deg, white 0%, blue 100%);
   }
   56% {
-    background: linear-gradient(191deg, cyan 0%, blue 100%);
+    background: linear-gradient(191deg, white 0%, blue 100%);
   }
   57% {
-    background: linear-gradient(192deg, cyan 0%, blue 100%);
+    background: linear-gradient(192deg, white 0%, blue 100%);
   }
   58% {
-    background: linear-gradient(193deg, cyan 0%, blue 100%);
+    background: linear-gradient(193deg, white 0%, blue 100%);
   }
   59% {
-    background: linear-gradient(194deg, cyan 0%, blue 100%);
+    background: linear-gradient(194deg, white 0%, blue 100%);
   }
   60% {
-    background: linear-gradient(195deg, cyan 0%, blue 100%);
+    background: linear-gradient(195deg, white 0%, blue 100%);
   }
   61% {
-    background: linear-gradient(196deg, cyan 0%, blue 100%);
+    background: linear-gradient(196deg, white 0%, blue 100%);
   }
   62% {
-    background: linear-gradient(197deg, cyan 0%, blue 100%);
+    background: linear-gradient(197deg, white 0%, blue 100%);
   }
   63% {
-    background: linear-gradient(198deg, cyan 0%, blue 100%);
+    background: linear-gradient(198deg, white 0%, blue 100%);
   }
   64% {
-    background: linear-gradient(199deg, cyan 0%, blue 100%);
+    background: linear-gradient(199deg, white 0%, blue 100%);
   }
   65% {
-    background: linear-gradient(200deg, cyan 0%, blue 100%);
+    background: linear-gradient(200deg, white 0%, blue 100%);
   }
   66% {
-    background: linear-gradient(201deg, cyan 0%, blue 100%);
+    background: linear-gradient(201deg, white 0%, blue 100%);
   }
   67% {
-    background: linear-gradient(202deg, cyan 0%, blue 100%);
+    background: linear-gradient(202deg, white 0%, blue 100%);
   }
   68% {
-    background: linear-gradient(203deg, cyan 0%, blue 100%);
+    background: linear-gradient(203deg, white 0%, blue 100%);
   }
   69% {
-    background: linear-gradient(204deg, cyan 0%, blue 100%);
+    background: linear-gradient(204deg, white 0%, blue 100%);
   }
   70% {
-    background: linear-gradient(205deg, cyan 0%, blue 100%);
+    background: linear-gradient(205deg, white 0%, blue 100%);
   }
   71% {
-    background: linear-gradient(206deg, cyan 0%, blue 100%);
+    background: linear-gradient(206deg, white 0%, blue 100%);
   }
   72% {
-    background: linear-gradient(207deg, cyan 0%, blue 100%);
+    background: linear-gradient(207deg, white 0%, blue 100%);
   }
   73% {
-    background: linear-gradient(208deg, cyan 0%, blue 100%);
+    background: linear-gradient(208deg, white 0%, blue 100%);
   }
   74% {
-    background: linear-gradient(209deg, cyan 0%, blue 100%);
+    background: linear-gradient(209deg, white 0%, blue 100%);
   }
   75% {
-    background: linear-gradient(210deg, cyan 0%, blue 100%);
+    background: linear-gradient(210deg, white 0%, blue 100%);
   }
   76% {
-    background: linear-gradient(211deg, cyan 0%, blue 100%);
+    background: linear-gradient(211deg, white 0%, blue 100%);
   }
   77% {
-    background: linear-gradient(212deg, cyan 0%, blue 100%);
+    background: linear-gradient(212deg, white 0%, blue 100%);
   }
   78% {
-    background: linear-gradient(213deg, cyan 0%, blue 100%);
+    background: linear-gradient(213deg, white 0%, blue 100%);
   }
   79% {
-    background: linear-gradient(214deg, cyan 0%, blue 100%);
+    background: linear-gradient(214deg, white 0%, blue 100%);
   }
   80% {
-    background: linear-gradient(215deg, cyan 0%, blue 100%);
+    background: linear-gradient(215deg, white 0%, blue 100%);
   }
   81% {
-    background: linear-gradient(216deg, cyan 0%, blue 100%);
+    background: linear-gradient(216deg, white 0%, blue 100%);
   }
   82% {
-    background: linear-gradient(217deg, cyan 0%, blue 100%);
+    background: linear-gradient(217deg, white 0%, blue 100%);
   }
   83% {
-    background: linear-gradient(218deg, cyan 0%, blue 100%);
+    background: linear-gradient(218deg, white 0%, blue 100%);
   }
   84% {
-    background: linear-gradient(219deg, cyan 0%, blue 100%);
+    background: linear-gradient(219deg, white 0%, blue 100%);
   }
   85% {
-    background: linear-gradient(220deg, cyan 0%, blue 100%);
+    background: linear-gradient(220deg, white 0%, blue 100%);
   }
   86% {
-    background: linear-gradient(221deg, cyan 0%, blue 100%);
+    background: linear-gradient(221deg, white 0%, blue 100%);
   }
   87% {
-    background: linear-gradient(222deg, cyan 0%, blue 100%);
+    background: linear-gradient(222deg, white 0%, blue 100%);
   }
   88% {
-    background: linear-gradient(223deg, cyan 0%, blue 100%);
+    background: linear-gradient(223deg, white 0%, blue 100%);
   }
   89% {
-    background: linear-gradient(224deg, cyan 0%, blue 100%);
+    background: linear-gradient(224deg, white 0%, blue 100%);
   }
   90% {
-    background: linear-gradient(225deg, cyan 0%, blue 100%);
+    background: linear-gradient(225deg, white 0%, blue 100%);
   }
   91% {
-    background: linear-gradient(226deg, cyan 0%, blue 100%);
+    background: linear-gradient(226deg, white 0%, blue 100%);
   }
   92% {
-    background: linear-gradient(227deg, cyan 0%, blue 100%);
+    background: linear-gradient(227deg, white 0%, blue 100%);
   }
   93% {
-    background: linear-gradient(228deg, cyan 0%, blue 100%);
+    background: linear-gradient(228deg, white 0%, blue 100%);
   }
   94% {
-    background: linear-gradient(229deg, cyan 0%, blue 100%);
+    background: linear-gradient(229deg, white 0%, blue 100%);
   }
   95% {
-    background: linear-gradient(230deg, cyan 0%, blue 100%);
+    background: linear-gradient(230deg, white 0%, blue 100%);
   }
   96% {
-    background: linear-gradient(231deg, cyan 0%, blue 100%);
+    background: linear-gradient(231deg, white 0%, blue 100%);
   }
   97% {
-    background: linear-gradient(232deg, cyan 0%, blue 100%);
+    background: linear-gradient(232deg, white 0%, blue 100%);
   }
   98% {
-    background: linear-gradient(233deg, cyan 0%, blue 100%);
+    background: linear-gradient(233deg, white 0%, blue 100%);
   }
   99% {
-    background: linear-gradient(234deg, cyan 0%, blue 100%);
+    background: linear-gradient(234deg, white 0%, blue 100%);
   }
   100% {
-    background: linear-gradient(235deg, cyan 0%, blue 100%);
+    background: linear-gradient(235deg, white 0%, blue 100%);
   }
 }
 
